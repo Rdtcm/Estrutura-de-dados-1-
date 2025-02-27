@@ -6,12 +6,10 @@ public class Exercicio2Lab3 {
 
         //colocando na pilha
         for (int i = 0; i < data.length(); i++) {
-            if (data.charAt(i) != "/") {
+            if (data.charAt(i) != '/') {
                 p1.push(data.charAt(i));
             }
         }
-
-
 
 
     }
