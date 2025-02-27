@@ -1,5 +1,4 @@
 
-import java.time.chrono.ThaiBuddhistChronology;
 
 public class Trabalhador {
     private String nome;
@@ -38,9 +37,6 @@ public class Trabalhador {
     public char get_sexo() {
         return this.sexo;
     }
-    public String get_endereco() {
-        return this.endereco;
-    }
     public void set_nome(String name) {
         this.nome = name;
     }
@@ -55,5 +51,19 @@ public class Trabalhador {
     }
     public String get_endereco() {
         return this.endereco;
+    }
+
+    //metodos mostrar, calculaSalarioAnual
+    public void mostrar() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Salario: " + salario);
+        System.out.println("CPF: " + cpf);
+        System.out.println("idade: " + idade);
+        System.out.println("sexo: " + sexo);
+        System.out.println("endereco: " + endereco);
+    }
+    // retorna o salario considerando o decimo terceiro
+    public float calculaSalarioAnual() {
+        return this.salario * 13.0f;
     }
 }
