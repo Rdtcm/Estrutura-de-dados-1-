@@ -19,10 +19,21 @@ public class Pacote {
         return retorno;
     }
 
+    //getter para o num2
+    public Integer getNum2(int num2) {
+        return this.num2;
+    }
+
     // fazendo setters dos valores\
     public void setValores(int num1, int num2) {
         this.num1 = num1;
         this.num2 = num2;
+    }
+
+   // fazendo getter do pacote
+   public String getPacote() {
+    String retorno = "(" +Integer.toString(this.num1) + Integer.toString(this.num2)+ ")";
+    return retorno;
     }
 
 
@@ -34,7 +45,7 @@ public class Pacote {
 
         this.pkg = "(" + num1Str + ", " +  num2Str + ")";
 
-        System.out.println(this.pkg);
+        // System.out.println(this.pkg);
 
         return this.pkg;
     }
@@ -51,3 +62,4 @@ public class Pacote {
         return sb.toString();
     }
 }  
+
